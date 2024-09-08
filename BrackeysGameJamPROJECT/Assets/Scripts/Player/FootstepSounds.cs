@@ -61,10 +61,6 @@ public class FootstepSounds : MonoBehaviour
         // Check if there's a ground surface (optional, based on ground detection)
         if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 1.1f, groundMask))
         {
-            if (hit.collider.CompareTag(groundTag)) // Optional ground tag check
-            {
-                // Play footstep sound for specific surface
-            }
         }
 
         // Choose a random footstep sound
