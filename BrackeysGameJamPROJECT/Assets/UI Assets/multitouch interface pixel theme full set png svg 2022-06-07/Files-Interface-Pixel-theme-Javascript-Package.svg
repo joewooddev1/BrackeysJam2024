@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="bg" transform="matrix(1,0,0,1,0,44)">
+        <g id="use4712" transform="matrix(1.1719,0,0,1.1719,0,-44)">
+            <rect x="0" y="0" width="256" height="256" style="fill:rgb(204,204,204);"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,-44)">
+            <path d="M70,230L210,230L240,200L240,90L100,90L70,120L70,230Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,0,-10)">
+            <g transform="matrix(5.24849e-17,-0.857143,1,6.12323e-17,120,226)">
+                <rect x="70" y="120" width="140" height="10"/>
+            </g>
+            <g transform="matrix(1.07143,0,0,1,25,-74)">
+                <rect x="70" y="120" width="140" height="10"/>
+            </g>
+        </g>
+        <g>
+            <g transform="matrix(1.07143,0,0,1,-15,-44)">
+                <rect x="70" y="120" width="140" height="10"/>
+            </g>
+            <g transform="matrix(1.07143,0,0,1,-15,66.0032)">
+                <rect x="70" y="120" width="140" height="10"/>
+            </g>
+            <g transform="matrix(4.81111e-17,-0.785714,1,6.12323e-17,80,251.002)">
+                <rect x="70" y="120" width="140" height="10"/>
+            </g>
+            <g transform="matrix(4.81111e-17,-0.785714,1,6.12323e-17,-60,251.002)">
+                <rect x="70" y="120" width="140" height="10"/>
+            </g>
+        </g>
+        <g>
+            <g transform="matrix(1,0,0,2,20,-194)">
+                <rect x="70" y="120" width="10" height="10"/>
+            </g>
+            <g transform="matrix(1,0,0,2,0,-174)">
+                <rect x="70" y="120" width="10" height="10"/>
+            </g>
+            <g transform="matrix(15,0,0,1,-970,-64)">
+                <rect x="70" y="120" width="10" height="10"/>
+            </g>
+        </g>
+        <g>
+            <g transform="matrix(1,0,0,1,140,-54)">
+                <rect x="70" y="120" width="10" height="10"/>
+            </g>
+            <g transform="matrix(1,0,0,2e-06,150,66)">
+                <rect x="70" y="120" width="10" height="10"/>
+            </g>
+            <g transform="matrix(2,0,0,2,90,-204)">
+                <rect x="70" y="120" width="10" height="10"/>
+            </g>
+        </g>
+        <g>
+            <g transform="matrix(2,0,0,1,60,56)">
+                <rect x="70" y="120" width="10" height="10"/>
+            </g>
+            <g transform="matrix(1,0,0,1,160,36)">
+                <rect x="70" y="120" width="10" height="10"/>
+            </g>
+            <g transform="matrix(1,0,0,1,150,46)">
+                <rect x="70" y="120" width="10" height="10"/>
+            </g>
+        </g>
+    </g>
+    <g id="draw" transform="matrix(1,0,0,1,0,-752.36)">
+        <g transform="matrix(1,0,0,1,-10,-0.0032)">
+            <g transform="matrix(1.5,0,0,1,-79.9968,752.36)">
+                <rect x="160" y="210" width="20" height="10"/>
+            </g>
+            <g transform="matrix(1,0,0,2,0,542.36)">
+                <rect x="180" y="200" width="10" height="10"/>
+            </g>
+            <g transform="matrix(1,0,0,1,0.0032,742.363)">
+                <rect x="160" y="160" width="30" height="10"/>
+            </g>
+            <g transform="matrix(1,0,0,1,0,752.36)">
+                <rect x="180" y="160" width="10" height="10"/>
+            </g>
+            <g transform="matrix(1,0,0,2,10,572.36)">
+                <rect x="150.003" y="170" width="9.997" height="10"/>
+            </g>
+            <g transform="matrix(1,0,0,1,9.9968,752.36)">
+                <rect x="150.003" y="200" width="9.997" height="10"/>
+            </g>
+            <g transform="matrix(3,0,0,1,-349.997,752.36)">
+                <rect x="170" y="180" width="10" height="10"/>
+            </g>
+        </g>
+        <g>
+            <g transform="matrix(1,0,0,1,9.9968,752.36)">
+                <rect x="100" y="200" width="10" height="10"/>
+            </g>
+            <g transform="matrix(3,0,0,1,-189.997,762.36)">
+                <rect x="100" y="200" width="10" height="10"/>
+            </g>
+            <g transform="matrix(3.67374e-16,-5.99968,1,6.12323e-17,-70,1562.33)">
+                <rect x="100" y="200" width="10" height="10"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,10,752.357)">
+            <rect x="80" y="210" width="10" height="10"/>
+        </g>
+    </g>
+</svg>

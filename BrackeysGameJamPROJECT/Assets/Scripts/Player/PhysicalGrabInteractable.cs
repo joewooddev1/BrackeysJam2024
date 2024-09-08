@@ -8,10 +8,14 @@ public class PhysicalGrabInteractable : MonoBehaviour
     private Transform interactionConnectPoint;
     private ConfigurableJoint attachJoint;
 
+    private Rigidbody thisRB;
+
     // Start is called before the first frame update
     void Start()
     {
-        interactionConnectPoint = GameObject.Find("PhysicsBasedGrabPoint").transform;   
+        interactionConnectPoint = GameObject.Find("PhysicsBasedGrabPoint").transform;
+
+        TryGetComponent(out thisRB);
     }
 
     public void AttachToGrab() 
@@ -22,13 +26,13 @@ public class PhysicalGrabInteractable : MonoBehaviour
         JointDrive yJD = attachJoint.yDrive;
         JointDrive zJD = attachJoint.zDrive;
 
-        xJD.positionSpring = 250f;
-        yJD.positionSpring = 250f;
-        zJD.positionSpring = 250f;
+        xJD.positionSpring = 250f * thisRB.mass;
+        yJD.positionSpring = 250f * thisRB.mass;
+        zJD.positionSpring = 250f * thisRB.mass;
 
-        xJD.positionDamper = 50f;
-        yJD.positionDamper = 50f;
-        zJD.positionDamper = 50f;
+        xJD.positionDamper = 25f * thisRB.mass;
+        yJD.positionDamper = 25f * thisRB.mass;
+        zJD.positionDamper = 25f * thisRB.mass;
 
         attachJoint.xDrive = xJD;
         attachJoint.yDrive = yJD;

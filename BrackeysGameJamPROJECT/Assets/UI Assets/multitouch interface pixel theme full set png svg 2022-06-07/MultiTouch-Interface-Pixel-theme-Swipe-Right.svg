@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="81.919998"
+   inkscape:export-xdpi="81.919998"
+   inkscape:export-filename="/Users/celly/Dropbox/Tarina-kansio/2022-06-01 gesture graphics from publicdomainvectors/MultiTouch-Interface-Pixel-theme-Flick-Right.svg.png"
+   inkscape:version="1.0rc1 (09960d6, 2020-04-09)"
+   version="1.1"
+   viewBox="0 0 300 300"
+   sodipodi:docname="MultiTouch-Interface-Pixel-theme-Flick-Right.svg"
+   id="svg2">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       x1="-680"
+       x2="-640"
+       gradientTransform="translate(-720 806.36)"
+       y1="216"
+       gradientUnits="userSpaceOnUse"
+       y2="156"
+       id="linearGradient6667-2">
+      <stop
+         offset="0"
+         style="stop-color:#e2e2e2"
+         id="stop5865-2-4" />
+      <stop
+         offset="1"
+         style="stop-color:#ffffff"
+         id="stop5867-3-9" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     inkscape:document-rotation="0"
+     inkscape:document-units="px"
+     inkscape:pageopacity="0.0"
+     inkscape:window-width="1920"
+     inkscape:guide-bbox="true"
+     showguides="true"
+     inkscape:cy="93.478839"
+     inkscape:cx="222.59328"
+     inkscape:current-layer="g5949"
+     borderopacity="1.0"
+     showgrid="false"
+     inkscape:window-height="1035"
+     inkscape:window-x="-28"
+     inkscape:zoom="1.4142136"
+     inkscape:window-maximized="0"
+     inkscape:showpageshadow="false"
+     pagecolor="#ffffff"
+     inkscape:window-y="23"
+     inkscape:pageshadow="2"
+     bordercolor="#666666"
+     id="base">
+    <inkscape:grid
+       empspacing="10"
+       type="xygrid"
+       snapvisiblegridlinesonly="true"
+       visible="true"
+       enabled="true"
+       id="grid3415" />
+  </sodipodi:namedview>
+  <g
+     transform="translate(0,44)"
+     inkscape:groupmode="layer"
+     inkscape:label="bg"
+     id="layer2">
+    <rect
+       inkscape:tile-cx="128"
+       inkscape:tile-y0="0"
+       x="0"
+       y="0"
+       inkscape:tile-cy="128"
+       inkscape:tile-h="256"
+       inkscape:export-xdpi="90"
+       width="256"
+       height="256"
+       inkscape:export-filename="/home/leon/_DATA/gnu/img/20110914_MickeyMouse_Multi-Touch Interfaces Set/0-MultiTouch-Interface_Mouse-theme_All.png"
+       inkscape:tile-w="256"
+       inkscape:export-ydpi="90"
+       style="fill:#cccccc"
+       inkscape:tile-x0="0"
+       id="use3389" />
+    <use
+       inkscape:tile-cx="150"
+       inkscape:tile-y0="0"
+       x="0"
+       y="0"
+       inkscape:tile-cy="150"
+       inkscape:tiled-clone-of="#use3389"
+       inkscape:tile-h="300"
+       inkscape:export-xdpi="90"
+       width="256"
+       height="256"
+       transform="matrix(1.1719 0 0 1.1719 0 -44)"
+       inkscape:export-filename="/home/leon/_DATA/gnu/img/20110914_MickeyMouse_Multi-Touch Interfaces Set/0-MultiTouch-Interface_Mouse-theme_All.png"
+       xlink:href="#use3389"
+       inkscape:export-ydpi="90"
+       inkscape:tile-w="300"
+       inkscape:tile-x0="0"
+       id="use4712" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#use4712"
+       width="300"
+       height="300"
+       xlink:href="#use4712"
+       id="use7523" />
+    <rect
+       y="-28.443651"
+       x="77.781746"
+       height="74.443634"
+       width="52.218258"
+       id="rect76"
+       style="fill:#cccccc;fill-opacity:1;stroke-width:7.55906;stroke-dashoffset:12.0945;stop-color:#000000" />
+  </g>
+  <g
+     transform="translate(0 -752.36)"
+     inkscape:groupmode="layer"
+     inkscape:label="draw"
+     id="layer1">
+    <g
+       transform="translate(1920,1380)"
+       id="g5575">
+      <g
+         transform="matrix(1.2311 0 0 1.2311 -113.75 1085.6)"
+         id="g3915-6-1-5-2-2-3">
+        <path
+           d="m89.471 1065.9c3.7268 6.1263-0.48379 10.049-6.16 12.947-8.0302 4.0988-27.898 2.1019-34.7-2.0136-6.2427-3.777-9.0128-9.3495-6.0403-14.184"
+           inkscape:connector-curvature="0"
+           style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:4.0614;fill:#ffffff"
+           sodipodi:nodetypes="cssc"
+           id="path3894-6-1-3-8-7-54" />
+        <path
+           d="m21.354 1021c-0.85728 15.682 13.892 40.298 31.364 46.018 9.0217 2.9538 29.326 3.8464 36.494-1.431 12.273-9.0365 18.48-20.686 21.285-35.088 0.99446-5.1051 1.707-10.986 0.95737-15.702-3.18-20.02-15.201-18.19-19.672-19.34-1.947-12.67-0.706-32.56 1.882-50.81 2.751-19.4-24.341-14.51-26.732 3.69-1.1198 8.5239-3.0565 15.509-5.109 34.59-3.1459-10.276-8.4312-25.036-10.205-35.24-2.9255-16.826-27.057-6.7396-23.048 13.758 2.7304 13.959 7.0695 24.243 9.7385 37.541-2.8062 2.259-16.056 5.6852-16.951 22.058z"
+           inkscape:connector-curvature="0"
+           style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:4.0614;fill:#ffffff"
+           sodipodi:nodetypes="ssssscsscsscs"
+           id="path3112-2-8-9-4-0-1" />
+        <path
+           inkscape:connector-curvature="0"
+           style="block-progression:tb;text-indent:0;color:#000000;text-transform:none;fill:#000000"
+           sodipodi:nodetypes="ccscc"
+           d="m59.576 982.54c3.0369 12.661 7.4917 18.465 9.1495 21.42-2.1204-7.8868-2.8679-9.8306-4.494-18.415-0.2757-1.4554-0.35672-3.1981-0.11641-5.3248z"
+           id="path3882-6-1-3-9-3-99" />
+        <path
+           inkscape:connector-curvature="0"
+           style="block-progression:tb;text-indent:0;color:#000000;text-transform:none;fill:#000000"
+           sodipodi:nodetypes="cccc"
+           d="m93.585 993.73-4.1137-0.29062c0.76134 6.9984 2.4669 9.3887 5.3267 15.116-0.16663-5.2958-0.7891-7.7078-1.213-14.825z"
+           id="path3884-6-1-1-1-6-1" />
+        <path
+           inkscape:connector-curvature="0"
+           style="block-progression:tb;text-indent:0;color:#000000;text-transform:none;fill:#000000"
+           sodipodi:nodetypes="cccc"
+           d="m36.025 998.02c3.8912 16.757-1.2012 23.343-4.5873 31.905 5.1449-8.8636 12.14-11.79 8.8407-31.439z"
+           id="path3892-0-9-95-7-2-6" />
+      </g>
+      <g
+         transform="translate(360.5,1141)"
+         id="g4671-4-89-9-1">
+        <path
+           d="m-442.9 1106.3c1.6396-10.931 21.509-18.813 31.663-9.5656-7.9924-18.015-37.025-4.705-31.663 9.5656z"
+           inkscape:connector-curvature="0"
+           style="block-progression:tb;text-indent:0;color:#000000;text-transform:none;fill:#000000"
+           sodipodi:nodetypes="ccc"
+           id="path4616-1-3-4-9" />
+      </g>
+      <g
+         transform="matrix(.96353 .26761 -.26761 .96353 696.03 1286.4)"
+         id="g4671-5-9-3-7-0">
+        <path
+           d="m-442.9 1106.3c1.6396-10.931 21.509-18.813 31.663-9.5656-7.9924-18.015-37.025-4.705-31.663 9.5656z"
+           inkscape:connector-curvature="0"
+           style="block-progression:tb;text-indent:0;color:#000000;text-transform:none;fill:#000000"
+           sodipodi:nodetypes="ccc"
+           id="path4616-9-1-2-2-3" />
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#000000"
+         sodipodi:nodetypes="ccccccccccccccccccccccccc"
+         d="m-27.344 2330.3c-2.8967 5.0998-7.6512 8.3524-12 12h6.7812c-0.12086 3.0293-0.91779 7.7045-1.625 11.344-3.5677 0.6843-7.9791 1.6059-11.344 1.6875v-6.8437c-3.8312 4.4996-7.5784 9.2716-12 12 5.0998 2.8966 8.3523 7.6511 12 12v-6.8126c3.0219 0.1206 7.6768 0.9502 11.312 1.6563 0.68428 3.5674 1.606 7.9799 1.6875 11.344h-6.8125c4.4997 3.8313 9.2717 7.5784 12 12 2.8968-5.0997 7.6198-8.3523 11.969-12h-6.7812c0.12086-3.0293 0.91775-7.7044 1.625-11.344 3.5677-0.6843 7.9791-1.6059 11.344-1.6875v6.8438c3.8312-4.4997 7.5784-9.2718 12-12-5.0998-2.8967-8.3523-7.6512-12-12v6.8124c-3.0218-0.1205-7.6768-0.9501-11.312-1.6562-0.6843-3.5674-1.6059-7.9799-1.6875-11.344h6.8125c-4.4997-3.8312-9.2404-7.5784-11.969-12z"
+         id="rect5404-5-9-9-1-5-0-1" />
+    </g>
+    <g
+       transform="translate(-1450,-1440)"
+       id="g5949">
+      <g
+         transform="translate(2970,1450)"
+         id="g6859-6">
+        <path
+           d="m-1470 942.36 20-20 30 30 10-110h10 20l-10 40h20l20 20h20l10 10h10l20 20v50l-20 20h10l-30 30h-70l-30-30v-20z"
+           inkscape:connector-curvature="0"
+           style="fill:url(#linearGradient6667-2)"
+           sodipodi:nodetypes="ccccccccccccccccccccc"
+           id="path5853-4-0" />
+        <rect
+           ry="0"
+           x="-1410"
+           y="832.35999"
+           width="20"
+           height="10"
+           style="fill:#000000"
+           id="rect5811-7-6" />
+        <rect
+           x="-1420"
+           y="842.36"
+           width="10"
+           height="110"
+           style="fill:#000000"
+           id="rect5813-8-1" />
+        <rect
+           x="-1390"
+           y="842.36"
+           width="10"
+           height="90"
+           style="fill:#000000"
+           id="rect5815-8-5" />
+        <rect
+           x="-1380"
+           y="882.36"
+           width="20"
+           height="10"
+           style="fill:#000000"
+           id="rect5817-6-8" />
+        <rect
+           x="-1360"
+           y="892.36"
+           width="10"
+           height="40"
+           style="fill:#000000"
+           id="rect5819-0-8" />
+        <rect
+           x="-1350"
+           y="892.36"
+           width="20"
+           height="10"
+           style="fill:#000000"
+           id="rect5821-8-6" />
+        <rect
+           x="-1330"
+           y="902.36"
+           width="20"
+           height="10"
+           style="fill:#000000"
+           id="rect5823-1-3" />
+        <rect
+           x="-1330"
+           y="912.36"
+           width="10"
+           height="30"
+           style="fill:#000000"
+           id="rect5825-0-0" />
+        <rect
+           x="-1310"
+           y="912.36"
+           width="10"
+           height="10"
+           style="fill:#000000"
+           id="rect5827-5-1" />
+        <rect
+           x="-1300"
+           y="922.36"
+           width="10"
+           height="70"
+           style="fill:#000000"
+           id="rect5829-2-9" />
+        <rect
+           x="-1440"
+           y="932.36"
+           width="10"
+           height="10"
+           style="fill:#000000"
+           id="rect5831-72-0" />
+        <rect
+           x="-1470"
+           y="922.36"
+           width="30"
+           height="10"
+           style="fill:#000000"
+           id="rect5833-45-19" />
+        <rect
+           x="-1470"
+           y="932.36"
+           width="10"
+           height="20"
+           style="fill:#000000"
+           id="rect5835-7-6" />
+        <rect
+           x="-1460"
+           y="952.36"
+           width="10"
+           height="10"
+           style="fill:#000000"
+           id="rect5837-3-9" />
+        <rect
+           x="-1450"
+           y="962.36"
+           width="10"
+           height="10"
+           style="fill:#000000"
+           id="rect5839-5-8" />
+        <rect
+           x="-1440"
+           y="972.36"
+           width="9.9992"
+           height="20"
+           style="fill:#000000"
+           id="rect5841-0-8" />
+        <rect
+           x="-1430"
+           y="992.36"
+           width="9.9999"
+           height="20"
+           style="fill:#000000"
+           id="rect5843-6-9" />
+        <rect
+           x="-1410"
+           y="1022.4"
+           width="90"
+           height="10"
+           style="fill:#000000"
+           id="rect5847-2-2" />
+        <rect
+           x="-1310"
+           y="992.36"
+           width="10"
+           height="20"
+           style="fill:#000000"
+           id="rect5851-6-7" />
+        <rect
+           x="-1430"
+           y="146"
+           width="10"
+           height="10"
+           transform="translate(0 796.36)"
+           style="fill:#000000"
+           id="rect6728-5" />
+        <rect
+           x="-1420"
+           y="216"
+           width="10"
+           height="10"
+           transform="translate(0 796.36)"
+           style="fill:#000000"
+           id="rect6730-5" />
+        <rect
+           x="-1320"
+           y="216"
+           width="10"
+           height="10"
+           transform="translate(0 796.36)"
+           style="fill:#000000"
+           id="rect7152-17" />
+      </g>
+      <rect
+         x="2312.4"
+         y="1630"
+         width="10"
+         height="10"
+         transform="matrix(0,1,1,0,0,0)"
+         style="fill:#000000"
+         id="rect8084-6-78-44-4-94" />
+      <rect
+         x="2302.4"
+         y="1640"
+         width="10"
+         height="10"
+         transform="matrix(0,1,1,0,0,0)"
+         style="fill:#000000"
+         id="rect8086-2-9-09-1-7" />
+      <rect
+         x="2282.4"
+         y="1640"
+         width="10"
+         height="10"
+         transform="matrix(0,1,1,0,0,0)"
+         style="fill:#000000"
+         id="rect8090-26-7-10-6-6" />
+      <rect
+         x="2272.4"
+         y="1630"
+         width="10"
+         height="10"
+         transform="matrix(0,1,1,0,0,0)"
+         style="fill:#000000"
+         id="rect8092-1-99-0-1-6" />
+      <rect
+         x="2292.4"
+         y="1610"
+         width="10"
+         height="50"
+         transform="matrix(0,1,1,0,0,0)"
+         style="fill:#000000"
+         id="rect8094-2-7-19-8-37" />
+    </g>
+  </g>
+  <metadata
+     id="metadata73">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:date>2011-09-16T07:24:30</dc:date>
+        <dc:description>a dedicated set of mutlitouch functions icons in pixel cursor style</dc:description>
+        <dc:source>https://openclipart.org/detail/160903/multitouch-interface-pixel-theme-drag-flick-by-benbois</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>BenBois</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>android</rdf:li>
+            <rdf:li>cursor</rdf:li>
+            <rdf:li>gesture</rdf:li>
+            <rdf:li>ios</rdf:li>
+            <rdf:li>ipad</rdf:li>
+            <rdf:li>iphone</rdf:li>
+            <rdf:li>multitouch</rdf:li>
+            <rdf:li>pixel</rdf:li>
+            <rdf:li>pointer</rdf:li>
+            <rdf:li>tablet</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

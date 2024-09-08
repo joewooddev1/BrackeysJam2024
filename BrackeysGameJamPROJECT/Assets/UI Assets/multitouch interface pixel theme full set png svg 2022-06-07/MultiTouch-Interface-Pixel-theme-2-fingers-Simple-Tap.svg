@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="bg" transform="matrix(1,0,0,1,0,44)">
+        <rect id="use3389" x="0" y="0" width="256" height="256" style="fill:rgb(204,204,204);"/>
+        <g id="use4712" transform="matrix(1.1719,0,0,1.1719,0,-44)">
+            <rect x="0" y="0" width="256" height="256" style="fill:rgb(204,204,204);"/>
+        </g>
+        <rect id="use7523" x="0" y="0" width="256" height="256" style="fill:rgb(204,204,204);"/>
+    </g>
+    <g id="draw" transform="matrix(1,0,0,1,0,-752.36)">
+        <g transform="matrix(1,0,0,1,1160,10)">
+            <g id="g5090">
+                <g id="g6906-7-9-8">
+                    <path id="path5853-9-1-9-6-4" d="M-1080,952.36L-1060,932.36L-1070,902.36L-1070,882.36L-1090,862.36L-1080,842.36L-1070,832.36L-1050,852.36L-1060,862.36L-1040,882.36L-1050,892.36L-1030,912.36L-1020,902.36L-1030,842.36L-1010,822.36L-990,842.36L-990,902.36L-980,892.36L-960,912.36L-960,902.36L-930,932.36L-940,992.36L-940,1002.36L-970,1032.36L-1040,1032.36L-1080,992.36L-1070,972.36L-1080,952.36Z" style="fill:url(#_Linear1);fill-rule:nonzero;"/>
+                    <rect id="rect5811-6-2-3-7-4" x="-1080" y="832.36" width="20" height="10"/>
+                    <rect id="rect5813-5-0-0-5-2" x="-1060" y="932.36" width="10" height="20"/>
+                    <rect id="rect5815-1-4-1-6-7" x="-1030" y="832.36" width="10" height="100"/>
+                    <rect id="rect5817-3-5-45-6-9" x="-1020" y="822.36" width="20" height="10"/>
+                    <rect id="rect5819-1-4-5-2-6" x="-1000" y="832.36" width="10" height="100"/>
+                    <rect id="rect5821-3-6-3-1-2" x="-990" y="892.36" width="20" height="10"/>
+                    <rect id="rect5823-4-0-66-7-6" x="-970" y="902.36" width="20" height="10"/>
+                    <rect id="rect5825-6-1-6-1-4" x="-970" y="912.36" width="10" height="30"/>
+                    <rect id="rect5827-4-6-8-3-6" x="-950" y="912.36" width="10" height="10"/>
+                    <rect id="rect5829-0-0-6-3-0" x="-940" y="922.36" width="10" height="70"/>
+                    <rect id="rect5831-5-0-3-7-3" x="-1070" y="902.36" width="10" height="40"/>
+                    <rect id="rect5839-1-2-0-1-2" x="-1080" y="942.36" width="10" height="60"/>
+                    <rect id="rect6056-9-1-7" x="-1080" y="872.36" width="10" height="30"/>
+                    <rect id="rect6058-5-8-5" x="-1090" y="842.36" width="10" height="30"/>
+                    <rect id="rect6060-8-8-8" x="-1060" y="842.36" width="10" height="30"/>
+                    <rect id="rect6062-0-4-6" x="-1050" y="872.36" width="10" height="30"/>
+                    <rect id="rect6064-5-1-5" x="-1040" y="902.36" width="10" height="20"/>
+                    <rect id="rect5843-6-1-1-6-4-2" x="-1070" y="1002.4" width="10" height="10"/>
+                    <rect id="rect5847-2-8-3-9-3-3" x="-1050" y="1022.4" width="90" height="10"/>
+                    <rect id="rect5851-6-9-6-8-1-4" x="-950" y="992.36" width="10" height="20"/>
+                    <rect id="rect6730-3-6-2-6-6" x="-1060" y="1012.4" width="10" height="10"/>
+                    <rect id="rect7152-1-7-6-9-4" x="-960" y="1012.4" width="10" height="10"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-370,-360)">
+            <rect id="rect7679-7-0-6-6" x="510" y="1162.4" width="20" height="10"/>
+            <rect id="rect7681-3-89-0-3" x="500" y="1172.4" width="10" height="10"/>
+            <rect id="rect7683-8-19-4-5" x="530" y="1172.4" width="10" height="10"/>
+            <rect id="rect7679-7-0-6-2-0" x="440" y="1172.4" width="20" height="10"/>
+            <rect id="rect7681-3-89-0-8-0" x="430" y="1182.4" width="10" height="10"/>
+            <rect id="rect7683-8-19-4-8-1" x="460" y="1182.4" width="10" height="10"/>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(40,-60,60,40,-1040,1012.36)"><stop offset="0" style="stop-color:rgb(226,226,226);stop-opacity:1"/><stop offset="1" style="stop-color:white;stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>

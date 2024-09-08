@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="bg" transform="matrix(1,0,0,1,0,44)">
+        <rect id="use3389" x="0" y="0" width="256" height="256" style="fill:rgb(204,204,204);"/>
+        <g id="use4712" transform="matrix(1.1719,0,0,1.1719,0,-44)">
+            <rect x="0" y="0" width="256" height="256" style="fill:rgb(204,204,204);"/>
+        </g>
+        <rect id="use7523" x="0" y="0" width="256" height="256" style="fill:rgb(204,204,204);"/>
+    </g>
+    <g id="draw" transform="matrix(1,0,0,1,0,-752.36)">
+        <g transform="matrix(1,0,0,1,1350,10)">
+            <g id="g4884">
+                <g id="g6885-1">
+                    <path id="path5853-9-5" d="M-1260,952.36L-1240,932.36L-1240,942.36L-1230,842.36L-1220,832.36L-1200,852.36L-1210,902.36L-1190,882.36L-1170,902.36L-1160,892.36L-1140,912.36L-1140,902.36L-1110,932.36L-1120,992.36L-1120,1002.36L-1150,1032.36L-1220,1032.36L-1260,992.36L-1250,972.36L-1260,952.36Z" style="fill:url(#_Linear1);fill-rule:nonzero;"/>
+                    <rect id="rect5811-6-5" x="-1230" y="832.36" width="20" height="10"/>
+                    <rect id="rect5813-5-2" x="-1240" y="842.36" width="10" height="110"/>
+                    <rect id="rect5815-1-5" x="-1210" y="842.36" width="10" height="90"/>
+                    <rect id="rect5817-3-4" x="-1200" y="882.36" width="20" height="10"/>
+                    <rect id="rect5819-1-2" x="-1180" y="892.36" width="10" height="40"/>
+                    <rect id="rect5821-3-5" x="-1170" y="892.36" width="20" height="10"/>
+                    <rect id="rect5823-4-3" x="-1150" y="902.36" width="20" height="10"/>
+                    <rect id="rect5825-6-2" x="-1150" y="912.36" width="10" height="30"/>
+                    <rect id="rect5827-4-9" x="-1130" y="912.36" width="10" height="10"/>
+                    <rect id="rect5829-0-3" x="-1120" y="922.36" width="10" height="70"/>
+                    <rect id="rect5831-5-1" x="-1250" y="932.36" width="10" height="10"/>
+                    <rect id="rect5839-1-22" x="-1260" y="942.36" width="10" height="60"/>
+                    <rect id="rect5843-6-1-69" x="-1250" y="1002.4" width="10" height="10"/>
+                    <rect id="rect5847-2-8-6" x="-1230" y="1022.4" width="90" height="10"/>
+                    <rect id="rect5851-6-9-7" x="-1130" y="992.36" width="10" height="20"/>
+                    <rect id="rect6730-3-96" x="-1240" y="1012.4" width="10" height="10"/>
+                    <rect id="rect7152-1-24" x="-1140" y="1012.4" width="10" height="10"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(6.12323e-17,1,-1,6.12323e-17,2382.4,-1047.64)">
+            <rect id="rect12006" x="1870" y="2282.4" width="30" height="10"/>
+            <rect id="rect12008" x="1890" y="2292.4" width="10" height="20"/>
+            <rect id="rect12010" x="1880" y="2292.4" width="10" height="10"/>
+            <rect id="rect12012" x="1870" y="2302.4" width="10" height="10"/>
+            <rect id="rect12016" x="1850" y="2322.4" width="10" height="10"/>
+            <rect id="rect12018" x="1830" y="2322.4" width="10" height="20"/>
+            <rect id="rect12020" x="1840" y="2332.4" width="10" height="10"/>
+            <rect id="rect12022" x="1830" y="2342.4" width="30" height="10"/>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(40,-60,60,40,-1220,1012.36)"><stop offset="0" style="stop-color:rgb(226,226,226);stop-opacity:1"/><stop offset="1" style="stop-color:white;stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>
