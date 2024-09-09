@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(ResonanceAudioSource))]
 public class PhysicsCollisionSounds : MonoBehaviour
 {
     [SerializeField] private float minimumCollisionSpeed;

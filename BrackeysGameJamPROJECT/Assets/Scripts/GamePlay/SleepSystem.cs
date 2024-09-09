@@ -11,6 +11,7 @@ public class SleepSystem : MonoBehaviour
     [SerializeField] private Image fadeToBlack;
 
     [SerializeField] private bool sleeping;
+
     private void Update()
     {
         if (sleeping)

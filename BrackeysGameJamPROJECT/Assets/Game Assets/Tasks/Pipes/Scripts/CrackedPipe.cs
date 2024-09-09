@@ -5,6 +5,9 @@ using UnityEngine;
 public class CrackedPipe : MonoBehaviour
 {
     [SerializeField] VavleInteraction valveControl;
+    [SerializeField] ParticleSystem mainSteamParticle;
+    [SerializeField] ParticleSystem secondarySmoke;
+    [SerializeField] AudioSource mainSteamSound;
 
     private void Start()
     {
@@ -19,6 +22,8 @@ public class CrackedPipe : MonoBehaviour
     public IEnumerator CloseLeakSequence() 
     {
         yield return new WaitForSeconds(1f);
-        gameObject.SetActive(false);
+        mainSteamParticle.emissionRate = 0;
+        secondarySmoke.emissionRate = 0;
+        mainSteamSound.volume = 0;
     }
 }
