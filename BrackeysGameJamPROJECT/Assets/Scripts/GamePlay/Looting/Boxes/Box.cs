@@ -14,12 +14,11 @@ public class Box : MonoBehaviour
     [SerializeField] private Transform boxCutterSpawnPoint;
 
     [SerializeField] AudioSource source;
+    [SerializeField] AudioClip tapeRipSFX;
 
     public bool isOpen;
     private void Start()
     {
-        openBoxModel.SetActive(false);
-
         TryGetComponent(out source);
     }
 
@@ -60,7 +59,7 @@ public class Box : MonoBehaviour
 
     IEnumerator ChangeBoxModel() 
     {
-        source.Play();
+        source.PlayOneShot(tapeRipSFX);
 
         yield return new WaitForSeconds(.6f);
         closedBoxModel.SetActive(false);
