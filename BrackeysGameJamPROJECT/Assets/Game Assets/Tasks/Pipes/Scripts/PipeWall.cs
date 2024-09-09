@@ -35,7 +35,9 @@ public class PipeWall : MonoBehaviour
 
     public void SelectAndCrackRandomPipe() 
     {
-        allCrackPoints[Random.Range(0, allCrackPoints.Length - 1)].SetActive(true);
+        int index = Random.Range(0, allCrackPoints.Length - 1);
+        allCrackPoints[index].SetActive(true);
+        allCrackPoints[index].GetComponent<CrackedPipe>().ReEnable();
         timeSinceLastCrack = 0;
         GenerateCrackTime();
     }

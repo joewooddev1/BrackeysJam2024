@@ -53,8 +53,8 @@ public class GameStateManager : MonoBehaviour
 
         if(currentGameState == GameState.Exploration) 
         {
-            characterController.enabled = true;
-            footstepSounds.enabled = true;
+            //characterController.enabled = true;
+            //footstepSounds.enabled = true;
         }
     }
 

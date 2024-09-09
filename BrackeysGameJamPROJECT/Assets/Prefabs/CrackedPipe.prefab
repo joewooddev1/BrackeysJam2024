@@ -4856,7 +4856,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3774712966192220088}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.23, y: 3.228, z: 0.516}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4977,6 +4977,7 @@ MonoBehaviour:
   valveControl: {fileID: 0}
   mainSteamParticle: {fileID: 1045144121739677002}
   secondarySmoke: {fileID: 8395227654909485555}
+  pipeCrack: {fileID: 8215097936073483846}
   mainSteamSound: {fileID: 5355012782197506613}
 --- !u!1 &7928026082949347560
 GameObject:
