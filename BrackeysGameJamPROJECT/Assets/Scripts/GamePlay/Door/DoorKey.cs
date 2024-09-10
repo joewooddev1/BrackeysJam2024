@@ -13,6 +13,7 @@ public class DoorKey : MonoBehaviour
             doorMatch.UnlockDoor();
 
             Destroy(gameObject);
+            Interactor.Instance.isHolding = false;
         }
     }
 }

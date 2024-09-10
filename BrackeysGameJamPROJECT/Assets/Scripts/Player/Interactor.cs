@@ -28,9 +28,32 @@ public class Interactor : MonoBehaviour
     public Interaction lastInteraction;
 
     private Interaction interaction;
+
+    public bool isHolding;
+
+    [SerializeField] private LayerMask ignoreMask;
     private void Start()
     {
         interactKey.Enable();
+    }
+
+    public static Interactor Instance { get; private set; }
+
+    public float hourOfDay;
+    public int day;
+
+    private void Awake()
+    {
+        // If there is an instance, and it's not me, delete myself.
+
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
     }
 
     private void Update()
@@ -41,14 +64,14 @@ public class Interactor : MonoBehaviour
 
     private void InteractionRay()
     {
-        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, maxRayDistance))
+        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, maxRayDistance, ignoreMask))
         {
-            if (hit.transform.TryGetComponent(out interaction))
+            if (hit.collider.attachedRigidbody.transform.TryGetComponent(out interaction))
             {
                 interactionText.text = "Left Mouse : " + interaction.interactionName;
 
                 currentInteraction = interaction;
-                if (lastInteraction == null && currentInteraction.type == InteractionType.hold) { lastInteraction = interaction; }
+                if (lastInteraction == null && !isHolding && currentInteraction.type == InteractionType.hold) { lastInteraction = interaction; }
 
                 standardCrosshair.SetActive(false);
                 interactCrosshair.SetActive(true);
@@ -101,9 +124,13 @@ public class Interactor : MonoBehaviour
                 standardCrosshair.SetActive(false);
                 interactCrosshair.SetActive(false);
                 holdingCrosshair.SetActive(true);
+
+                isHolding = true;
             }
             else
             {
+                isHolding = false;
+
                 lastInteraction.onDropped.Invoke();
 
                 standardCrosshair.SetActive(true);

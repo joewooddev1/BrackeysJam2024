@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterState : MonoBehaviour
 {
@@ -36,5 +37,11 @@ public class CharacterState : MonoBehaviour
         {
             toDisable[i].enabled = true;
         }
+    }
+
+
+    public void KillPlayer()
+    {
+        SceneManager.LoadScene(0);
     }
 }

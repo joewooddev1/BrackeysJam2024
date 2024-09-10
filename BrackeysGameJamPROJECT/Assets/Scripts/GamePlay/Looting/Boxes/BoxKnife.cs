@@ -5,7 +5,7 @@ using UnityEngine;
 public class BoxKnife : MonoBehaviour
 {
     [SerializeField] private float collisionSpeedKnife;
-    
+
     private void OnCollisionEnter(Collision collision)
     {
         float collisionSpeed = collision.relativeVelocity.magnitude;
@@ -19,6 +19,7 @@ public class BoxKnife : MonoBehaviour
                     box.OpenBoxWithKnife();
 
                     Destroy(gameObject);
+                    Interactor.Instance.isHolding = false;
                 }
             }
         }

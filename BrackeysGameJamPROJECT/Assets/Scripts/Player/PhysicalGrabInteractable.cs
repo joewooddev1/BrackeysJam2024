@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[RequireComponent (typeof (Interaction))]
 public class PhysicalGrabInteractable : MonoBehaviour
 {
     private Transform interactionConnectPoint;

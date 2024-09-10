@@ -23,7 +23,6 @@ public class SleepSystem : MonoBehaviour
         else 
         {
             fadeToBlack.color = Color.Lerp(fadeToBlack.color, awakeColor, 5 * Time.deltaTime);
-            GameStateManager.Instance.currentGameState = GameState.Exploration;
         }
     }
 

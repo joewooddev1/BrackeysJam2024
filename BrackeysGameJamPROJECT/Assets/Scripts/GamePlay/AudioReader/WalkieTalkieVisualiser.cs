@@ -25,6 +25,9 @@ public class WalkieTalkieVisualiser : MonoBehaviour
 
     private void Update()
     {
+        if (source.clip == null) { return; }
+
+
         float loudness = detection.GetLoudnessFromAudioClip(source.timeSamples, source.clip) * loudnessSens;
 
         if (loudness < threshold) 

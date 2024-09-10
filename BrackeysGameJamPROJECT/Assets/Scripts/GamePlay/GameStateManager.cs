@@ -5,9 +5,20 @@ public enum GameState
 {
     Intro,
     Sleeping,
-    Exploration,
-    Mission,
-    FinalShowdown
+    Day1,
+    Day2,
+    Day3,
+    Day4,
+    Day5,
+    Day6,
+    Day7,
+}
+
+[System.Serializable]
+public class DayDependantVoiceLines 
+{
+    public GameState state;
+    public AudioClip[] voiceLines;
 }
 
 public class GameStateManager : MonoBehaviour
@@ -16,6 +27,8 @@ public class GameStateManager : MonoBehaviour
 
     public PlayerCharacterController characterController;
     public FootstepSounds footstepSounds;
+
+    [SerializeField] DayDependantVoiceLines[] voiceLines;
 
     public static GameStateManager Instance { get; private set; }
 
@@ -40,22 +53,24 @@ public class GameStateManager : MonoBehaviour
 
     private void Update()
     {
-        if(currentGameState == GameState.Intro) 
+        if(currentGameState == GameState.Day1) 
         {
-            // intro code bla bla bla
+            // disable certain interactions
+
+            // intro voiceline
+            WalkieTalkieVoicelineSystem.Instance.SwitchAudioVoiceLine(voiceLines[0].voiceLines[0]);
         }
 
         if (currentGameState == GameState.Sleeping) 
         {
-            characterController.enabled = false;
-            footstepSounds.enabled = false;
+            CharacterState.Instance.DisableCharacter();
         }
+    }
 
-        if(currentGameState == GameState.Exploration) 
-        {
-            //characterController.enabled = true;
-            //footstepSounds.enabled = true;
-        }
+    // day 1 state management
+    public void TriggeredVoiceLine(int voicelineNumber, int day) 
+    {
+        WalkieTalkieVoicelineSystem.Instance.SwitchAudioVoiceLine(voiceLines[day].voiceLines[voicelineNumber]);
     }
 
     IEnumerator ClockTimer() 

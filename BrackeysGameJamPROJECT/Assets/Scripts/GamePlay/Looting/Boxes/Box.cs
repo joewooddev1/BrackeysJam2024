@@ -28,7 +28,7 @@ public class Box : MonoBehaviour
 
         if (collisionSpeed > collisionOpenSpeed) 
         {
-            OpenBox();
+            //OpenBox();
         }
     }
 
