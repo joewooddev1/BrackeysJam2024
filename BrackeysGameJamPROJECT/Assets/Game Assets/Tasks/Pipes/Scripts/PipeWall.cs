@@ -21,25 +21,36 @@ public class PipeWall : MonoBehaviour
 
     public UnityEvent onFirstPop;
 
-    private void Start()
-    {
-        InvokeOverTime();
+    public static PipeWall Instance { get; private set; }
 
-        valve.onInteracted.AddListener(InvokeOverTime);
-    }
+    public float energyLevel;
 
-    public void InvokeOverTime() 
+    bool dayOneCompleted;
+
+    private void Awake()
     {
-        Invoke("SelectAndCrackRandomPipe", Random.Range(timeBetweenBreakMin, timeBetweenBreakMax));
+        // If there is an instance, and it's not me, delete myself.
+
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
     }
 
     public void GenerateCrackTime() 
     {
         crackTime = Random.Range(timeBetweenBreakMin, timeBetweenBreakMax);
+        Invoke("SelectAndCrackRandomPipe", crackTime);
     }
 
     public void SelectAndCrackRandomPipe() 
     {
+        HubCenter.Instance.TriggerTask(2);
+
         int index = Random.Range(0, allCrackPoints.Length - 1);
         allCrackPoints[index].SetActive(true);
         allCrackPoints[index].GetComponent<CrackedPipe>().ReEnable();

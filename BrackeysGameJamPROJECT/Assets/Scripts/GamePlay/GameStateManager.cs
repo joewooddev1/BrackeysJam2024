@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public enum GameState 
 {
@@ -105,6 +106,8 @@ public class GameStateManager : MonoBehaviour
     {
         day += 1;
 
+        SceneManager.LoadScene(day);
+
         energyLevel = 100;
 
         voiceLines[day].triggers.SetActive(true);
@@ -114,19 +117,28 @@ public class GameStateManager : MonoBehaviour
     {
         if (!dayOneCompleted)
         {
-            Instantiate(foodSpawnPrefab, foodSpawnPointDayOne.position, Quaternion.identity);
-            dayOneCompleted = true;
-
             WalkieTalkieVoicelineSystem.Instance.SwitchAudioVoiceLine(voiceLines[0].voiceLines[3]);
+
+            dayOneCompleted = true;
 
             finishDayOneEvent.Invoke();
             voiceLines[0].triggers.SetActive(false);
+
         }
     }
-
+                                                                            
     public void DayTwoFinishTasks()
     {
-        voiceLines[1].triggers.SetActive(false);
+        if (!dayOneCompleted)
+        {
+            WalkieTalkieVoicelineSystem.Instance.SwitchAudioVoiceLine(voiceLines[0].voiceLines[3]);
+
+            dayOneCompleted = true;
+
+            finishDayTwoEvent.Invoke();
+            voiceLines[1].triggers.SetActive(false);
+
+        }
     }
 
     public void DayThreeFinishTasks()

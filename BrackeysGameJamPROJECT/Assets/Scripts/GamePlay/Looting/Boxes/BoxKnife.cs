@@ -16,10 +16,12 @@ public class BoxKnife : MonoBehaviour
             {
                 if (!box.isOpen) 
                 {
+                    Interactor.Instance.isHolding = false;
+                    Interactor.Instance.currentInteraction = null;
+                    Interactor.Instance.lastInteraction = null;
                     box.OpenBoxWithKnife();
 
                     Destroy(gameObject);
-                    Interactor.Instance.isHolding = false;
                 }
             }
         }

@@ -40,6 +40,8 @@ public class CrackedPipe : MonoBehaviour
     public void CloseLeak() 
     {
         StartCoroutine(CloseLeakSequence());
+
+        HubCenter.Instance.TriggerTask(2);
     }
 
     public IEnumerator CloseLeakSequence() 

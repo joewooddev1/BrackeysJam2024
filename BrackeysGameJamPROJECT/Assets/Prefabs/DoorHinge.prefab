@@ -32,7 +32,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5935646701269728999}
-  - {fileID: 1129981502221141639}
   - {fileID: 4530654378362706634}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -90,6 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4530654378362706634}
   - component: {fileID: 8403336062729068633}
+  - component: {fileID: 7719446406632947698}
   m_Layer: 0
   m_Name: Keyhole
   m_TagString: Untagged
@@ -106,7 +106,7 @@ Transform:
   m_GameObject: {fileID: 7120219081789948154}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.098, z: -1.499}
+  m_LocalPosition: {x: 0, y: 1.098, z: -1.2490001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -121,14 +121,15 @@ AudioSource:
   m_GameObject: {fileID: 7120219081789948154}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2920c286029561542b026d4b5a120f9f, type: 3}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 248799cb4acba48f7b3ee842a80f788c,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: e54f3ec0ab3b10548a931cb4223b6e30, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
+  Spatialize: 1
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
@@ -208,6 +209,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7719446406632947698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7120219081789948154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5e1719799ca4f9b9f5db81449517ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bypassRoomEffects: 0
+  directivityAlpha: 0
+  directivitySharpness: 1
+  listenerDirectivityAlpha: 0
+  listenerDirectivitySharpness: 1
+  gainDb: 0
+  nearFieldEffectEnabled: 0
+  nearFieldEffectGain: 1
+  occlusionEnabled: 0
+  occlusionIntensity: 1
+  quality: 2
 --- !u!1 &7735225946696085966
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,7 +248,7 @@ GameObject:
   - component: {fileID: 2728886356486842404}
   - component: {fileID: 1324043833524839945}
   - component: {fileID: 3340186226588445578}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Door Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,12 +263,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7735225946696085966}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.25, z: -1.5}
+  m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -1.261, y: 1.25, z: 0.035}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 446390477397086922}
+  m_Father: {fileID: 5935646701269728999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6450662934361598780
 MeshFilter:
@@ -371,6 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65679faf689027d4da6c72372d3c123d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doSnap: 1
 --- !u!114 &3340186226588445578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,7 +439,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   type: 1
-  interactionName: Door
+  canGrab: 1
+  interactionName: Bedroom Door
 --- !u!1 &7917354287269797727
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,6 +473,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1568396497364501230}
+  - {fileID: 1129981502221141639}
   m_Father: {fileID: 446390477397086922}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!54 &1753546954832197336
@@ -472,7 +499,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -543,8 +570,8 @@ Transform:
   m_GameObject: {fileID: 8253871825227274062}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.87499964, y: 1.125, z: -0.000000022351742}
-  m_LocalScale: {x: 1.7500062, y: 2.2500393, z: 0.05}
+  m_LocalPosition: {x: -0.8158, y: 1.1528, z: -0}
+  m_LocalScale: {x: 1.6317058, y: 2.3056154, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5935646701269728999}

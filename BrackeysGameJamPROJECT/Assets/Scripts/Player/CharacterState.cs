@@ -55,7 +55,7 @@ public class CharacterState : MonoBehaviour
         // do damage notification
         playerHealth -= amount;
 
-        if (damageType == "gas") 
+        if (damageType == "gas" && amount > 0) 
         {
             source.pitch = Random.Range(1f, 1.15f);
             source.PlayOneShot(coughing, 0.15f);

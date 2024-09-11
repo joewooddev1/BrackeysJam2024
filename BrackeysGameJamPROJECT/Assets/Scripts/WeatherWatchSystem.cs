@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
@@ -18,6 +19,8 @@ public class WeatherWatchSystem : MonoBehaviour
     [SerializeField] private Image targetTemperature;
     [SerializeField] private Image currentTemperature;
 
+    [SerializeField] private float pressureBuildup;
+
     public float switchKnobDirection;
     public float twistKnobDirection;
 
@@ -27,6 +30,12 @@ public class WeatherWatchSystem : MonoBehaviour
 
     public float amountHot;
     public float amountCold;
+
+    private int timesUsed;
+    [SerializeField] private UnityEvent onFirstExit;
+
+    public bool canPressureBuildup;
+
     private void Start()
     {
         switchKnobLeft.Enable();
@@ -51,10 +60,25 @@ public class WeatherWatchSystem : MonoBehaviour
         CharacterState.Instance.EnableCharacter();
 
         gameActive = false;
+
+        if (timesUsed < 1) 
+        {
+            onFirstExit.Invoke();
+        }
+
+        timesUsed++;
     }
 
     private void Update()
     {
+        pressureBuildup++;
+
+        if (pressureBuildup > 500f && canPressureBuildup) 
+        {
+            PipeWall.Instance.SelectAndCrackRandomPipe();
+            pressureBuildup = 0;
+        }
+
         if (gameActive)
         {
             fpCamera.transform.rotation = gameCameraLocation.rotation;

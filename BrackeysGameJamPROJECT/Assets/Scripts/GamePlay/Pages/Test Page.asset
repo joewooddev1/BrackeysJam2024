@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4178f46a1ebe9439cdf4dbe4b78eb5, type: 3}
   m_Name: Test Page
   m_EditorClassIdentifier: 
-  pageTitle: Test Page
+  pageTitle: Hint
   pageIndex: 0
-  pageBody: This is a test page
+  pageBody: '"Hmmm that box cutter looks sharp"'

@@ -16,6 +16,8 @@ public class FuelGauge : MonoBehaviour
 
     [SerializeField] private UnityEvent onFull;
 
+    bool invoked;
+
 
     private void Awake()
     {
@@ -42,7 +44,7 @@ public class FuelGauge : MonoBehaviour
 
         if (currentFuel >= maxFuel) 
         {
-            onFull.Invoke();
+            if (!invoked) { onFull.Invoke(); invoked = true; }
 
             Debug.Log("full");
             
@@ -56,23 +58,23 @@ public class FuelGauge : MonoBehaviour
             }
             else if (GameStateManager.Instance.currentGameState == GameState.Day3)
             {
-                GameStateManager.Instance.DayOneFinishTasks();
+                //GameStateManager.Instance.DayOneFinishTasks();
             }
             else if (GameStateManager.Instance.currentGameState == GameState.Day4)
             {
-                GameStateManager.Instance.DayOneFinishTasks();
+                //GameStateManager.Instance.DayOneFinishTasks();
             }
             else if (GameStateManager.Instance.currentGameState == GameState.Day5)
             {
-                GameStateManager.Instance.DayOneFinishTasks();
+                //GameStateManager.Instance.DayOneFinishTasks();
             }
             else if (GameStateManager.Instance.currentGameState == GameState.Day6)
             {
-                GameStateManager.Instance.DayOneFinishTasks();
+                //GameStateManager.Instance.DayOneFinishTasks();
             }
             else if (GameStateManager.Instance.currentGameState == GameState.Day7)
             {
-                GameStateManager.Instance.DayOneFinishTasks();
+                //GameStateManager.Instance.DayOneFinishTasks();
             }
         }
     }

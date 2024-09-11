@@ -5,6 +5,10 @@ using UnityEngine;
 public class DoorKey : MonoBehaviour
 {
     public DoorSystem doorMatch;
+    public void DoorMatchLookup(string doorNameMatch) 
+    {
+        doorMatch = GameObject.Find(doorNameMatch).GetComponent<DoorSystem>();
+    }
 
     private void Update()
     {

@@ -9,6 +9,7 @@ public class BatterySlot : MonoBehaviour
     [SerializeField] UnityEvent onInsert;
 
     bool full;
+    bool invoked;
 
     Transform currentBattery;
     
@@ -16,7 +17,7 @@ public class BatterySlot : MonoBehaviour
     {
         if (other.attachedRigidbody.GetComponent<Battery>() != null && !full) 
         {
-            onInsert.Invoke();
+            if (!invoked) { onInsert.Invoke(); invoked = true; }
 
             other.transform.position = batterySlot.position;
             other.transform.rotation = batterySlot.rotation;

@@ -9,6 +9,7 @@ public class AudioPlaythroughTrigger : MonoBehaviour
 
     [SerializeField] int day;
     [SerializeField] int voicelineIndex;
+    [SerializeField] private bool doAudio = true;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -16,7 +17,7 @@ public class AudioPlaythroughTrigger : MonoBehaviour
         {
             onTriggered.Invoke();
 
-            GameStateManager.Instance.TriggeredVoiceLine(voicelineIndex, day);
+            if (doAudio) { GameStateManager.Instance.TriggeredVoiceLine(voicelineIndex, day); }
         }
     }
 }

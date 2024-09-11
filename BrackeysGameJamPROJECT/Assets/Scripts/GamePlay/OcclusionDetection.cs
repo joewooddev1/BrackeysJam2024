@@ -14,7 +14,7 @@ public class OcclusionDetection : MonoBehaviour
     public bool occluded;
     private void Update()
     {
-        if (Physics.Linecast(transform.position, player.position) || Vector3.Distance(transform.position, player.position) > 5f)
+        if (Physics.Linecast(transform.position, player.position) || Vector3.Distance(transform.position, player.position) > 8f)
         {
             occluded = true;
         }
