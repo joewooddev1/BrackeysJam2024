@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PipeWall : MonoBehaviour
 {
@@ -14,7 +15,11 @@ public class PipeWall : MonoBehaviour
     private float timeSinceLastCrack;
     private float crackTime;
 
+    public int amountOfPops;
+
     bool canCrack;
+
+    public UnityEvent onFirstPop;
 
     private void Start()
     {
@@ -40,5 +45,14 @@ public class PipeWall : MonoBehaviour
         allCrackPoints[index].GetComponent<CrackedPipe>().ReEnable();
         timeSinceLastCrack = 0;
         GenerateCrackTime();
+
+        if (amountOfPops < 1)
+        {
+            // play oh i forgot blalala
+            GameStateManager.Instance.TriggeredVoiceLine(2, 0);
+            onFirstPop.Invoke();
+        }
+
+        amountOfPops++;
     }
 }

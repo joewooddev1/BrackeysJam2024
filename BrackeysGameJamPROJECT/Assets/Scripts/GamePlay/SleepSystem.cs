@@ -18,7 +18,7 @@ public class SleepSystem : MonoBehaviour
         {
             fadeToBlack.color = Color.Lerp(fadeToBlack.color, sleepingColor, 5 * Time.deltaTime);
 
-            GameStateManager.Instance.currentGameState = GameState.Sleeping;
+            CharacterState.Instance.DisableCharacter();
         }
         else 
         {
@@ -41,5 +41,9 @@ public class SleepSystem : MonoBehaviour
         FadeImage();
         yield return new WaitForSeconds(5f);
         FadeImage();
+
+        CharacterState.Instance.EnableCharacter();
+
+        GameStateManager.Instance.AdvanceDay();
     }
 }

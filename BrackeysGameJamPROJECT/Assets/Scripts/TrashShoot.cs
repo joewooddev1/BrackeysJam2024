@@ -17,8 +17,12 @@ public class TrashShoot : MonoBehaviour
     [SerializeField] private float shootSizeX;
     [SerializeField] private float shootSizeZ;
 
+    public bool scrapSpawned;
+
     public void SpawnJunk() 
     {
+        if (scrapSpawned) return;
+        
         int randomWoodAmount = Random.Range(minAmountOfWood, maxAmountOfWood);
         int randomPaperAmount = Random.Range(minAmountOfPaper, maxAmountOfPaper);
         int randomOther = Random.Range(3, 9);
@@ -37,5 +41,7 @@ public class TrashShoot : MonoBehaviour
         {
             Instantiate(randomJunk[Random.Range(0, randomJunk.Length - 1)], transform.position + new Vector3(Random.Range(-shootSizeX, shootSizeX), 0, Random.Range(-shootSizeZ, shootSizeZ)), Quaternion.identity);
         }
+
+        scrapSpawned = true;
     }
 }

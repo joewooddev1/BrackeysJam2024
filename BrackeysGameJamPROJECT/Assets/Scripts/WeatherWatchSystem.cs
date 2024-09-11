@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class WeatherWatchSystem : MonoBehaviour
 {
@@ -14,12 +15,18 @@ public class WeatherWatchSystem : MonoBehaviour
     [SerializeField] private Camera fpCamera;
     [SerializeField] private Transform gameCameraLocation;
 
+    [SerializeField] private Image targetTemperature;
+    [SerializeField] private Image currentTemperature;
+
     public float switchKnobDirection;
     public float twistKnobDirection;
 
     public bool gameActive;
 
     public int currentKnob;
+
+    public float amountHot;
+    public float amountCold;
     private void Start()
     {
         switchKnobLeft.Enable();
@@ -30,15 +37,18 @@ public class WeatherWatchSystem : MonoBehaviour
     public void ActivateGame() 
     {
         fpCamera.transform.position = gameCameraLocation.position;
-        fpCamera.transform.rotation = gameCameraLocation.rotation;
 
         gameActive = true;
+
+        targetTemperature.rectTransform.localPosition = new Vector3(Random.Range(-500, 500), 0, 0);
     }
 
     public void ExitGame()
     {
         fpCamera.transform.localPosition = new Vector3(0f, 1.8f, 0f);
         fpCamera.transform.localRotation = Quaternion.identity;
+
+        CharacterState.Instance.EnableCharacter();
 
         gameActive = false;
     }
@@ -47,6 +57,8 @@ public class WeatherWatchSystem : MonoBehaviour
     {
         if (gameActive)
         {
+            fpCamera.transform.rotation = gameCameraLocation.rotation;
+
             CharacterState.Instance.DisableCharacter();
 
             MiniGameLoop();
@@ -54,7 +66,12 @@ public class WeatherWatchSystem : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space)) 
             {
                 ExitGame();
-                CharacterState.Instance.EnableCharacter();
+
+            }
+
+            if (Vector3.Distance(targetTemperature.rectTransform.localPosition, currentTemperature.rectTransform.localPosition) < .1f) 
+            {
+                ExitGame();
             }
         }
     }
@@ -105,5 +122,20 @@ public class WeatherWatchSystem : MonoBehaviour
     private void TwistKnob(int knobIndex, float direction) 
     {
         knobs[knobIndex].transform.Rotate(0, direction, 0);
+
+        if (knobIndex == 0) 
+        {
+            amountHot += direction * 1f;
+            amountHot = Mathf.Clamp(amountHot, -500f, 0f);
+        }
+
+        if (knobIndex == 1)
+        {
+            amountCold -= direction * 1f;
+            amountCold = Mathf.Clamp(amountCold, 0f, 500f);
+        }
+
+        float finalRotation = amountHot + amountCold;
+        currentTemperature.rectTransform.localPosition = new Vector3(Mathf.Clamp(finalRotation, -500f, 500f), 0, 0);
     }
 }

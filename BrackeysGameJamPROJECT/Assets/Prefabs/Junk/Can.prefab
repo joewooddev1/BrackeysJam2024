@@ -17,9 +17,8 @@ GameObject:
   - component: {fileID: -8911592602462351173}
   - component: {fileID: 2305486687463630224}
   - component: {fileID: -4466702116122139825}
-  - component: {fileID: 8341471101500080015}
-  - component: {fileID: 5353404647158072746}
-  m_Layer: 0
+  - component: {fileID: 6491895075341983061}
+  m_Layer: 7
   m_Name: Can
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +102,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaTensor: {x: 2, y: 2, z: 2}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
@@ -111,7 +110,7 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
+  m_ImplicitCom: 0
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -174,6 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65679faf689027d4da6c72372d3c123d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doSnap: 1
 --- !u!82 &-8911592602462351173
 AudioSource:
   m_ObjectHideFlags: 0
@@ -187,12 +187,12 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
+  Spatialize: 1
+  SpatializePostEffects: 1
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -231,7 +231,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -307,22 +307,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minimumCollisionSpeed: 0
-  collisionSound: {fileID: 8300000, guid: 6cdcbe53f67b37941b74765d7851b24a, type: 3}
---- !u!114 &8341471101500080015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1565524264310669398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3998a91adea3d343ac5228ad864d508, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeTillCollsion: 0.25
---- !u!65 &5353404647158072746
-BoxCollider:
+  collisionSound: {fileID: 8300000, guid: 7b3cb23af5864b842a4ce4ff4c4a89a4, type: 3}
+--- !u!64 &6491895075341983061
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -339,6 +326,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.18, y: 0.18, z: 0.25200003}
-  m_Center: {x: 0.00000010058284, y: 0, z: 0.0000007376075}
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6168650812902891753, guid: 59fc6b6bb9329bb41bb561f77ee533a9, type: 3}

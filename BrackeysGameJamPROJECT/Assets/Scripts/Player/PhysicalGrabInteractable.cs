@@ -9,6 +9,8 @@ public class PhysicalGrabInteractable : MonoBehaviour
     private Transform interactionConnectPoint;
     private ConfigurableJoint attachJoint;
 
+    public bool doSnap = true;
+
     private Rigidbody thisRB;
 
     // Start is called before the first frame update
@@ -21,7 +23,7 @@ public class PhysicalGrabInteractable : MonoBehaviour
 
     public void AttachToGrab() 
     {
-        if (attachJoint == null) { attachJoint = gameObject.AddComponent<ConfigurableJoint>(); }
+        if (attachJoint == null) { if (doSnap) { transform.position = interactionConnectPoint.position; } attachJoint = gameObject.AddComponent<ConfigurableJoint>(); }
 
         JointDrive xJD = attachJoint.xDrive;
         JointDrive yJD = attachJoint.yDrive;

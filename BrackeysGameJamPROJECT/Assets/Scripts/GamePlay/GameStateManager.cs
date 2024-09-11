@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public enum GameState 
 {
@@ -19,6 +20,7 @@ public class DayDependantVoiceLines
 {
     public GameState state;
     public AudioClip[] voiceLines;
+    public GameObject triggers;
 }
 
 public class GameStateManager : MonoBehaviour
@@ -35,6 +37,23 @@ public class GameStateManager : MonoBehaviour
     public float hourOfDay;
     public int day;
 
+    [Header("Day Specific Events")]
+    [SerializeField] private Transform foodSpawnPointDayOne;
+    [SerializeField] private GameObject foodSpawnPrefab;
+
+    [Header("INSANE AMOUNT OF EVENTS")]
+    [SerializeField] private UnityEvent finishDayOneEvent;
+    [SerializeField] private UnityEvent finishDayTwoEvent;
+    [SerializeField] private UnityEvent finishDayThreeEvent;
+    [SerializeField] private UnityEvent finishDayFourEvent;
+    [SerializeField] private UnityEvent finishDayFiveEvent;
+    [SerializeField] private UnityEvent finishDaySixEvent;
+    [SerializeField] private UnityEvent finishDaySevenEvent;
+
+    public float energyLevel;
+
+    bool dayOneCompleted;
+
     private void Awake()
     {
         // If there is an instance, and it's not me, delete myself.
@@ -47,8 +66,18 @@ public class GameStateManager : MonoBehaviour
         {
             Instance = this;
         }
+    }
 
-        StartCoroutine(ClockTimer());
+    private void Start()
+    {
+        StartCoroutine(DepleatEnergy());
+    }
+
+    public IEnumerator DepleatEnergy()
+    {
+        energyLevel -= 1f;
+        yield return new WaitForSeconds(5f);
+        StartCoroutine(DepleatEnergy());
     }
 
     private void Update()
@@ -58,7 +87,6 @@ public class GameStateManager : MonoBehaviour
             // disable certain interactions
 
             // intro voiceline
-            WalkieTalkieVoicelineSystem.Instance.SwitchAudioVoiceLine(voiceLines[0].voiceLines[0]);
         }
 
         if (currentGameState == GameState.Sleeping) 
@@ -73,21 +101,56 @@ public class GameStateManager : MonoBehaviour
         WalkieTalkieVoicelineSystem.Instance.SwitchAudioVoiceLine(voiceLines[day].voiceLines[voicelineNumber]);
     }
 
-    IEnumerator ClockTimer() 
+    public void AdvanceDay() 
     {
-        yield return new WaitForSecondsRealtime(60f);
+        day += 1;
 
+        energyLevel = 100;
 
-        if (hourOfDay == 24)
+        voiceLines[day].triggers.SetActive(true);
+    }
+
+    public void DayOneFinishTasks() 
+    {
+        if (!dayOneCompleted)
         {
-            day++;
-        }
+            Instantiate(foodSpawnPrefab, foodSpawnPointDayOne.position, Quaternion.identity);
+            dayOneCompleted = true;
 
-        if (hourOfDay < 24) 
-        {
-            hourOfDay += 1;
-        }
+            WalkieTalkieVoicelineSystem.Instance.SwitchAudioVoiceLine(voiceLines[0].voiceLines[3]);
 
-        StartCoroutine(ClockTimer());
+            finishDayOneEvent.Invoke();
+            voiceLines[0].triggers.SetActive(false);
+        }
+    }
+
+    public void DayTwoFinishTasks()
+    {
+        voiceLines[1].triggers.SetActive(false);
+    }
+
+    public void DayThreeFinishTasks()
+    {
+
+    }
+
+    public void DayFourFinishTasks()
+    {
+
+    }
+
+    public void DayFiveFinishTasks()
+    {
+
+    }
+
+    public void DaySixFinishTasks()
+    {
+
+    }
+
+    public void DaySevenFinishTasks()
+    {
+        // final day
     }
 }

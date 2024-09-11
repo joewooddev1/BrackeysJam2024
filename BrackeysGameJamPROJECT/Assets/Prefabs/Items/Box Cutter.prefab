@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1806478139450146934}
   - component: {fileID: 2050977469595285363}
   - component: {fileID: 5421174203981849814}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Box Cutter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,8 +56,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.32792538, y: 0.068561316, z: 1.4745741}
-  m_Center: {x: 0, y: 0, z: -0.040971298}
+  m_Size: {x: 0.4457945, y: 0.2659737, z: 1.4745741}
+  m_Center: {x: 0.019437768, y: 0, z: -0.040971298}
 --- !u!54 &6883451836596858013
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65679faf689027d4da6c72372d3c123d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doSnap: 1
 --- !u!114 &2050977469595285363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +141,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   type: 1
+  canGrab: 0
   interactionName: Box Cutter
 --- !u!114 &5421174203981849814
 MonoBehaviour:
@@ -221,6 +223,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f5abb2a03068511449739057b007e9aa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

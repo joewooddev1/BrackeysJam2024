@@ -17,9 +17,8 @@ GameObject:
   - component: {fileID: 1684788079981246985}
   - component: {fileID: 7215694511398525022}
   - component: {fileID: 3691729034798939775}
-  - component: {fileID: -1093752928626752327}
-  - component: {fileID: 8895238165842886977}
-  m_Layer: 0
+  - component: {fileID: 6265884759194274044}
+  m_Layer: 7
   m_Name: WaterBottle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +35,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 1.9499998, y: 1.1055466, z: 1.45}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -103,7 +102,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaTensor: {x: 2, y: 2, z: 2}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
@@ -111,7 +110,7 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
+  m_ImplicitCom: 0
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -174,6 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65679faf689027d4da6c72372d3c123d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doSnap: 1
 --- !u!82 &1684788079981246985
 AudioSource:
   m_ObjectHideFlags: 0
@@ -187,12 +187,12 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
+  Spatialize: 1
+  SpatializePostEffects: 1
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -231,7 +231,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -307,28 +307,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minimumCollisionSpeed: 0
-  collisionSound: {fileID: 8300000, guid: 6cdcbe53f67b37941b74765d7851b24a, type: 3}
---- !u!114 &-1093752928626752327
-MonoBehaviour:
+  collisionSound: {fileID: 8300000, guid: 86630741bff0b5246a59d714b492dc05, type: 3}
+--- !u!64 &6265884759194274044
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8812884381935544149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3998a91adea3d343ac5228ad864d508, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeTillCollsion: 0.25
---- !u!65 &8895238165842886977
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8812884381935544149}
-  m_Material: {fileID: 13400000, guid: 7ed39ce37ad3bec4d8a513d8bfa46272, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -339,6 +326,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 0.9999999, z: 2.2179592}
-  m_Center: {x: 0, y: 0, z: 1.2497798}
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2685422785042298724, guid: 59fc6b6bb9329bb41bb561f77ee533a9, type: 3}

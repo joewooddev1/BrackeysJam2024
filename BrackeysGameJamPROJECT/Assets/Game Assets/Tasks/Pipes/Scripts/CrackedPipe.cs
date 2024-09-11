@@ -10,6 +10,9 @@ public class CrackedPipe : MonoBehaviour
     [SerializeField] GameObject pipeCrack;
     [SerializeField] AudioSource mainSteamSound;
 
+    [SerializeField] private bool gasLeaking;
+
+    int playerDamage;
     private void Start()
     {
         valveControl.onInteracted.AddListener(CloseLeak);
@@ -21,6 +24,17 @@ public class CrackedPipe : MonoBehaviour
         secondarySmoke.emissionRate = 10f;
         mainSteamSound.volume = .25f;
         pipeCrack.SetActive(true);
+
+        StartCoroutine(HarmPlayer());
+
+        playerDamage = 1;
+    }
+
+    public IEnumerator HarmPlayer() 
+    {
+        CharacterState.Instance.PlayerTakeDamage(playerDamage, "gas");
+        yield return new WaitForSeconds(5f);
+        StartCoroutine(HarmPlayer());
     }
 
     public void CloseLeak() 
@@ -35,5 +49,7 @@ public class CrackedPipe : MonoBehaviour
         secondarySmoke.emissionRate = 0;
         mainSteamSound.volume = 0;
         pipeCrack.SetActive(false);
+
+        playerDamage = 0;
     }
 }

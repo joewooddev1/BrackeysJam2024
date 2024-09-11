@@ -68,32 +68,26 @@ public class Interactor : MonoBehaviour
         {
             if (hit.collider.attachedRigidbody.transform.TryGetComponent(out interaction))
             {
+                interactionText.gameObject.SetActive(true);
                 interactionText.text = "Left Mouse : " + interaction.interactionName;
 
                 currentInteraction = interaction;
-                if (lastInteraction == null && !isHolding && currentInteraction.type == InteractionType.hold) { lastInteraction = interaction; }
+                if (!isHolding && currentInteraction.type == InteractionType.hold) { lastInteraction = interaction; }
 
                 standardCrosshair.SetActive(false);
                 interactCrosshair.SetActive(true);
-            }
-            else 
-            {
-                currentInteraction = null;
-
-                interactionText.text = "";
-
-                standardCrosshair.SetActive(true);
-                interactCrosshair.SetActive(false);
             }
         }
         else 
         {
             currentInteraction = null;
 
-            interactionText.text = "";
+            interactionText.gameObject.SetActive(false);
 
             standardCrosshair.SetActive(true);
             interactCrosshair.SetActive(false);
+
+            Debug.Log("Stopped Looking");
         }
     }
 
@@ -114,9 +108,9 @@ public class Interactor : MonoBehaviour
             }
         }
         
-        if (lastInteraction != null && lastInteraction.type == InteractionType.hold) 
+        if (lastInteraction.type == InteractionType.hold && lastInteraction.canGrab) 
         {
-            if (interactKey.IsPressed())
+            if (interactKey.IsPressed() && currentInteraction != null)
             {
                 lastInteraction.onInteracted.Invoke();
                 onPlayerInteracted.Invoke();
@@ -125,9 +119,11 @@ public class Interactor : MonoBehaviour
                 interactCrosshair.SetActive(false);
                 holdingCrosshair.SetActive(true);
 
+                interactionText.gameObject.SetActive(false);
+
                 isHolding = true;
             }
-            else
+            else if(!interactKey.IsPressed() && lastInteraction != null)
             {
                 isHolding = false;
 
@@ -136,7 +132,7 @@ public class Interactor : MonoBehaviour
                 standardCrosshair.SetActive(true);
                 interactCrosshair.SetActive(false);
                 holdingCrosshair.SetActive(false);
-                lastInteraction = null;
+
                 currentInteraction = null;
             }
         }

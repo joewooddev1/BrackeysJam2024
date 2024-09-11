@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7292529178290656497}
   - component: {fileID: 7492828856473713041}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1253704823168619029}
   - component: {fileID: 8064239904718093937}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2580260493908564288}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Open Box Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4419405559695557849}
   - component: {fileID: 8922809209338027111}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7217326880200926362}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Closed Box Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1653276072312687245}
   - component: {fileID: 5851174955060137580}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +287,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7777350464802686818}
   - component: {fileID: 7931527921412340419}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4171768565687559417}
   - component: {fileID: 7807410503906197921}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 1247443712445011892}
   - component: {fileID: 8389326653828589382}
   - component: {fileID: 4742410282077685967}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,6 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65679faf689027d4da6c72372d3c123d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doSnap: 0
 --- !u!114 &2410791201423319848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -693,7 +694,7 @@ GameObject:
   - component: {fileID: 8747967401368639011}
   - component: {fileID: 4569806950865905380}
   - component: {fileID: 6247269671662747328}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Box (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -795,7 +796,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6207398775106352130}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -836,7 +837,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5505749367435346773}
   - component: {fileID: 2522032486286396267}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -889,7 +890,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1507044877422789451}
   - component: {fileID: 4040509938201142090}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -942,7 +943,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6665138134397936221}
   - component: {fileID: 7128412131391385988}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -994,7 +995,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4009463003542955436}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Box Cutter Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1027,7 +1028,7 @@ GameObject:
   - component: {fileID: 1308161026895568675}
   - component: {fileID: 7058307908940341528}
   - component: {fileID: 2674458986336072192}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Box.002 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1181,6 +1182,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box Cutter Animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f5abb2a03068511449739057b007e9aa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f5abb2a03068511449739057b007e9aa,
         type: 3}

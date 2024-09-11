@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 524306015782708957}
   - component: {fileID: 7148834080693376410}
   - component: {fileID: 5996365615425976500}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &3380951492700231202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65679faf689027d4da6c72372d3c123d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doSnap: 1
 --- !u!114 &770570880324822552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,6 +354,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Key
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0915d9ef44416d14aa26844fb268e128,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
