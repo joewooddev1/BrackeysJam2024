@@ -10,13 +10,13 @@ public class StormProtocolManager : MonoBehaviour
     [SerializeField] UnityEvent onCompleted;
 
     public bool completed;
-    public bool allLevelsDone;
+    public bool allLevelsDone = false;
 
     public void CheckComplete()
-    { 
-        for (int i = 0; i < buttons.Length; i++)
+    {
+        if (buttons[0].matches && buttons[1].matches && buttons[2].matches && buttons[3].matches && buttons[4].matches && buttons[5].matches) 
         {
-            allLevelsDone = buttons[i].matches;
+            allLevelsDone = true;
         }
     }
 

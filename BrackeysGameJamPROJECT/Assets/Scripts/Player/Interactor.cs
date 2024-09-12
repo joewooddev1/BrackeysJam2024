@@ -108,7 +108,7 @@ public class Interactor : MonoBehaviour
             }
         }
         
-        if (lastInteraction.type == InteractionType.hold && lastInteraction.canGrab) 
+        if (lastInteraction != null && lastInteraction.type == InteractionType.hold && lastInteraction.canGrab) 
         {
             if (interactKey.IsPressed() && currentInteraction != null)
             {
