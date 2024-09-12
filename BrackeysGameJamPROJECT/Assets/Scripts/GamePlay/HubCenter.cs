@@ -25,6 +25,7 @@ public class HubCenter : MonoBehaviour
 
     [SerializeField] private float timeBetweenBeeps;
 
+    float volume = 1f;
     private void Start()
     {
         
@@ -55,10 +56,10 @@ public class HubCenter : MonoBehaviour
     {
         for (int i = 0; i < tasks.Length; i++)
         {
-            if (tasks[i].completed) { yield return null; }
+            if (tasks[i].completed) { volume = 0; } else { volume = 1; }
         }
         
-        beepSource.PlayOneShot(beepNoise);
+        beepSource.PlayOneShot(beepNoise, volume);
         yield return new WaitForSeconds(timeBetweenBeeps);
         StartCoroutine(BeepNoise());
     }

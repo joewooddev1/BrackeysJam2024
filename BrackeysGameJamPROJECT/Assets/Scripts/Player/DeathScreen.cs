@@ -5,6 +5,6 @@ public class DeathScreen : MonoBehaviour
 {
     public void Restart() 
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(PlayerPrefs.GetInt("CurrentDay"));
     }
 }

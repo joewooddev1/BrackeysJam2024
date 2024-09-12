@@ -73,6 +73,7 @@ public class CharacterState : MonoBehaviour
 
     public void KillPlayer()
     {
-        SceneManager.LoadScene(1);
+        PlayerPrefs.SetInt("CurrentDay", GameStateManager.Instance.day);
+        SceneManager.LoadScene(7);
     }
 }

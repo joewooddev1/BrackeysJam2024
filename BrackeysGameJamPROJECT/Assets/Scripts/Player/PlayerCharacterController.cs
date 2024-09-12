@@ -15,6 +15,8 @@ public class PlayerCharacterController : MonoBehaviour
     [SerializeField] private InputAction sprintKey;
     [SerializeField] private InputAction jumpKey;
 
+    [SerializeField] private Camera fpCamera;
+
     private Vector2 movementVector;
     private CharacterController characterController;
     private float speed;
@@ -28,6 +30,8 @@ public class PlayerCharacterController : MonoBehaviour
         TryGetComponent(out characterController);
 
         speed = walkSpeed;
+
+        fpCamera = Camera.main;
     }
 
     private void FixedUpdate()
@@ -39,6 +43,8 @@ public class PlayerCharacterController : MonoBehaviour
     {
         movementVector = movementVectorInput.ReadValue<Vector2>();
         Vector3 direction = transform.TransformDirection(movementVector.x, 0, movementVector.y);
+
+        if (sprintKey.IsPressed()) { speed = sprintSpeed; fpCamera.fieldOfView = 60f; } else { speed = walkSpeed; fpCamera.fieldOfView = 55f; }
 
         direction = (direction * speed) * Time.fixedDeltaTime;
         characterController.SimpleMove(direction);

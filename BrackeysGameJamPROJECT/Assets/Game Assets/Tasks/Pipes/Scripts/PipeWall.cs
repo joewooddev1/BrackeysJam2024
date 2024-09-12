@@ -60,7 +60,7 @@ public class PipeWall : MonoBehaviour
         if (amountOfPops < 1)
         {
             // play oh i forgot blalala
-            GameStateManager.Instance.TriggeredVoiceLine(2, 0);
+            if (GameStateManager.Instance.day == 0) { GameStateManager.Instance.TriggeredVoiceLine(2, 0); }
             onFirstPop.Invoke();
         }
 

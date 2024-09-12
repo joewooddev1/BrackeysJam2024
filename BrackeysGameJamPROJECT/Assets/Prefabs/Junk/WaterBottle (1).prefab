@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8812884381935544149
+--- !u!1 &5369082572281157019
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,53 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1139519020212906437}
-  - component: {fileID: 8750664705223162587}
-  - component: {fileID: 4257971755238016294}
-  - component: {fileID: 1427502791899626425}
-  - component: {fileID: 6507344407670093784}
-  - component: {fileID: 395611854342479367}
-  - component: {fileID: 1684788079981246985}
-  - component: {fileID: 7215694511398525022}
-  - component: {fileID: 3691729034798939775}
-  - component: {fileID: 6265884759194274044}
-  m_Layer: 7
-  m_Name: WaterBottle (1)
+  - component: {fileID: 9096788410595243644}
+  - component: {fileID: 9211139803446123946}
+  - component: {fileID: 3694667536578598956}
+  - component: {fileID: 4515869920252917314}
+  m_Layer: 0
+  m_Name: WaterBottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1139519020212906437
+--- !u!4 &9096788410595243644
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8812884381935544149}
+  m_GameObject: {fileID: 5369082572281157019}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 1.9499998, y: 1.1055466, z: 1.45}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1139519020212906437}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8750664705223162587
+--- !u!33 &9211139803446123946
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8812884381935544149}
-  m_Mesh: {fileID: 2685422785042298724, guid: 59fc6b6bb9329bb41bb561f77ee533a9, type: 3}
---- !u!23 &4257971755238016294
+  m_GameObject: {fileID: 5369082572281157019}
+  m_Mesh: {fileID: 2685422785042298724, guid: 3004c02665e92824e9c3696046a06cd7, type: 3}
+--- !u!23 &3694667536578598956
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8812884381935544149}
+  m_GameObject: {fileID: 5369082572281157019}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -68,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: -5998004595915773402, guid: 3004c02665e92824e9c3696046a06cd7, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -90,6 +84,66 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4515869920252917314
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5369082572281157019}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2685422785042298724, guid: 3004c02665e92824e9c3696046a06cd7, type: 3}
+--- !u!1 &8812884381935544149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1139519020212906437}
+  - component: {fileID: 1427502791899626425}
+  - component: {fileID: 6507344407670093784}
+  - component: {fileID: 395611854342479367}
+  - component: {fileID: 1684788079981246985}
+  - component: {fileID: 7215694511398525022}
+  - component: {fileID: 3691729034798939775}
+  m_Layer: 7
+  m_Name: WaterBottle (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1139519020212906437
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8812884381935544149}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 1.9499998, y: 1.1055466, z: 1.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9096788410595243644}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1427502791899626425
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -160,6 +214,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   type: 1
+  canGrab: 1
   interactionName: Empty Bottle
 --- !u!114 &395611854342479367
 MonoBehaviour:
@@ -308,25 +363,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumCollisionSpeed: 0
   collisionSound: {fileID: 8300000, guid: 86630741bff0b5246a59d714b492dc05, type: 3}
---- !u!64 &6265884759194274044
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8812884381935544149}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2685422785042298724, guid: 59fc6b6bb9329bb41bb561f77ee533a9, type: 3}
